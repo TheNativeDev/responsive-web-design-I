@@ -1,5 +1,11 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
-* Use your own code or past solution for Great Idea Web Page CSS here! */
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -162,7 +168,6 @@ header .fortypercent {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
-	
 }
 
 section.details {
@@ -184,7 +189,6 @@ section.details .features {
 
 section.details .about {
 	margin-left: 5px;
-	
 }
 
 .full-width-image {
@@ -263,4 +267,182 @@ footer {
 	padding: 50px 0 110px;
 }
 
+.services-heading-section {
+	width: 100%;
+}
 
+.services-heading-section h2 {
+	font-size: 30px;
+}
+
+.services-section {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.services-section .service {
+	width: 48%;
+	padding: 20px;
+	border: 1px solid black;
+	background: rgb(244, 244, 244);
+	margin: 20px 0;
+}
+
+.services-section .service p {
+	padding-bottom: 20px;
+}
+
+.services-section .service button {
+	padding: 10px 40px;
+	border-radius: 5px;
+	background: white;
+	border: 1px solid black;
+	color: black;
+}
+
+.line-bold {
+	width: 100%;
+	height: 2px;
+	background: black;
+	margin: 30px 0 20px;
+}
+
+.section-facts {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+
+.section-facts div {
+	width: 50%;
+	padding-top: 20px;
+	padding-right: 30px;
+}
+
+.section-facts ul {
+	list-style-type: square;
+	padding-top: 20px;
+	margin-left: 20px;
+}
+
+.section-facts ul li {
+	padding: 10px 0;
+}
+
+.section-facts div p {
+	padding-top: 10px;
+}
+
+.section-facts img {
+	width: 50%;
+	flex-shrink: 1;
+}
+
+#navigation {
+	overflow: hidden;
+}
+
+
+@media screen and (max-width: 800px) {
+    .nav-container {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .navigation-bar .nav-container {
+        width: 100%;
+    }
+
+    .navigation-bar .nav-container nav {
+        padding-top: 20px;
+    }
+
+    .fortypercent {
+        display: none;
+    }
+
+    .sixtypercent {
+        align-self: center;
+        align-content: center;
+        width: 100% !important;
+        max-height: 220px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .nav-container {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .navigation-bar .nav-container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .navigation-bar .nav-container nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navigation-bar .nav-container div {
+        border-bottom: 1px solid rgb(185, 186, 187);
+        width: 100%;
+    }
+
+    .navigation-bar .nav-container nav a {
+        padding: 15px 0;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid rgb(185, 186, 187);
+    }
+
+    .fortypercent {
+        display: none;
+    }
+
+    .sixtypercent {
+        align-self: center;
+        align-content: center;
+        width: 100% !important;
+        max-height: 220px;
+        margin-top: 150px;
+    }
+
+    .details, .offerings {
+        flex-direction: column;
+    }
+
+    .details .features, .details .about, .offerings div {
+        width: 100% !important;
+        padding: 20px 0;
+    }
+
+    .service-header {
+        display: none;
+    }
+
+    .services-heading-section {
+        padding-top: 250px;
+    }
+
+    .services-section .service {
+        width: 100%;
+    }
+
+    .section-facts {
+        flex-direction: column;
+    }
+
+    .section-facts div, .section-facts img {
+        width: 100%;
+    }
+}
